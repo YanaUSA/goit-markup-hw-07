@@ -259,7 +259,6 @@ img {
 }
 
 .feature-item {
-  outline: 2px solid blueviolet;
   width: 270px;
 }
 
@@ -293,15 +292,19 @@ img {
 
 /* What we do */
 
+.no-top-padding {
+  padding-top: 0;
+}
+
 .pic-list {
   display: flex;
   justify-content: space-between;
 }
 
-.pic-item {
+.pic-list__item {
   position: relative;
 }
-.pic-bgr {
+.pic-list__bgr {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -313,53 +316,48 @@ img {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.pic-desc {
+.pic-list__desc {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--white-color);
 }
-.works {
-  padding-top: 0;
-}
 
-.team-bgr {
+/* Our team */
+
+.section-bgr {
   background: var(--secondary-section-bgd);
 }
 .team {
   display: flex;
   justify-content: space-between;
   text-align: center;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
 }
-.team-item {
+.team__item {
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-item > img {
+
+.team__img {
   margin-bottom: 30px;
 }
-.team-item > h3 {
-  margin-bottom: 10px;
-}
-.team-item > p {
-  margin-bottom: 16px;
-}
 
-.team,
-.member-name,
-.position {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
-}
-.team .member-name {
+.team__name {
+  margin-bottom: 10px;
   font-weight: 500;
   color: var(--main-text-color);
 }
-.position {
+.team__position {
+  margin-bottom: 16px;
   color: var(--secondary-text-color);
 }
+
+/* Social links */
 
 .social-links {
   display: flex;
@@ -368,14 +366,14 @@ img {
   margin-right: 32px;
   margin-bottom: 30px;
 }
-.social-list-item {
+.social-links__item {
   width: 44px;
   height: 44px;
   fill: var(--icon-color);
   border-radius: 50%;
   transition: background-color var(--transition-time) var(--cubic);
 }
-.social-list-item > a {
+.social-links__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -384,11 +382,14 @@ img {
   border-radius: 50%;
   transition: fill var(--transition-time) var(--cubic);
 }
-.social-list-item:hover,
-.social-list-item > a:focus {
+.social-links__item:hover,
+.social-links__link:focus {
   background-color: var(--accent-color);
   fill: var(--white-color);
 }
+
+/* Clients section */
+
 .clients {
   display: flex;
   justify-content: space-between;
@@ -545,11 +546,11 @@ img {
   transition: opacity var(--transition-time) var(--cubic);
 }
 
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-} */
+}
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.8);
