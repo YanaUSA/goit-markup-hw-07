@@ -744,15 +744,19 @@ img {
 }
 
 /* Portfolio-page */
-.filtr {
+
+.portfolio {
+}
+
+.portfolio__filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.filtr li:not(:last-child) {
+.portfolio__filter-item:not(:last-child) {
   margin-right: 8px;
 }
-.button-filtr {
+.portfolio__button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -769,18 +773,21 @@ img {
     background-color var(--transition-time) var(--cubic),
     box-shadow var(--transition-time) var(--cubic);
 }
-.button-filtr:hover,
-.button-filtr:focus {
+.portfolio__button:hover,
+.portfolio__button:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
 }
+
+/* Portfolio card */
+
 .portfolio-item {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
@@ -793,25 +800,25 @@ img {
 .portfolio-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-.portfolio-link {
+.portfolio-item__link {
   display: block;
   transition: box-shadow var(--transition-time) var(--cubic);
 }
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio-item__link:hover,
+.portfolio-item__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.portfolio-link:hover .desc-overlay,
-.portfolio-link:focus .desc-overlay {
+.portfolio-item__link:hover .portfolio-item__overlay-desc,
+.portfolio-item__link:focus .portfolio-item__overlay-desc {
   transform: translateY(0);
 }
 
-.portfolio-item-overlay {
+.portfolio-item__overlay {
   position: relative;
   overflow: hidden;
 }
-.desc-overlay {
+.portfolio-item__overlay-desc {
   position: absolute;
   top: 0;
   left: 0;
@@ -829,21 +836,21 @@ img {
   transition: transform var(--transition-time) var(--cubic);
 }
 
-.card-description {
+.portfolio-item__card-desc {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
 
-.link-title {
+.portfolio-item__link-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-text-color);
   margin-bottom: 4px;
 }
-.link-desc {
+.portfolio-item__link-desc {
   font-size: 16px;
   line-height: 1.88;
   color: var(--secondary-text-color);
