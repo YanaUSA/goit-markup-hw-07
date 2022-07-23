@@ -627,6 +627,9 @@ img {
 
 /* Order-form on modal window */
 
+.order-form {
+}
+
 .order-form__label {
   position: relative;
   display: block;
@@ -781,7 +784,7 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio__list {
+.portfolio__grid {
   display: flex;
   flex-wrap: wrap;
 }
