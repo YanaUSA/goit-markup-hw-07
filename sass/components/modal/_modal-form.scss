@@ -75,7 +75,7 @@
         height: 15px;
         top: 4px;
         left: 14px;
-        background-image: url(../../../images/icon-unchecked.svg);
+        background-image: url(../images/icon-unchecked.svg);
     }
 
     &__input {
@@ -103,11 +103,11 @@
 }
 
 .checkbox__input:focus-visible+.checkbox__field {
-    background-image: url(../../../images/icon-unchecked-focused.svg);
+    background-image: url(../images/icon-unchecked-focused.svg);
 }
 
 .checkbox__input:checked:focus+.checkbox__field {
-    background-image: url(../../../images/icon-check.svg);
+    background-image: url(../images/icon-check.svg);
 }
 
 .send-btn {

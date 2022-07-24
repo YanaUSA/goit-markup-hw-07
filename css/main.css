@@ -485,7 +485,7 @@ img {
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/Img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -875,7 +875,7 @@ img {
   height: 15px;
   top: 4px;
   left: 14px;
-  background-image: url(../../../images/icon-unchecked.svg);
+  background-image: url(../images/icon-unchecked.svg);
 }
 .checkbox__input {
   position: absolute;
@@ -900,11 +900,11 @@ img {
 }
 
 .checkbox__input:focus-visible + .checkbox__field {
-  background-image: url(../../../images/icon-unchecked-focused.svg);
+  background-image: url(../images/icon-unchecked-focused.svg);
 }
 
 .checkbox__input:checked:focus + .checkbox__field {
-  background-image: url(../../../images/icon-check.svg);
+  background-image: url(../images/icon-check.svg);
 }
 
 .send-btn {
